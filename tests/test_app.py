@@ -8,5 +8,5 @@ def client():
 
 def test_home(client):
     response = client.get('/')
-    assert response.data == b'Witaj, świecie!'
+    assert response.data == 'Witaj, świecie!'
     assert response.status_code == 200
